@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="backg.jpg">
+ <center>
+   <div class="main">
+    <div class="top_bar">
+        
+        <div class="options">
+         <button><i class="bx bx-music"></i></button>
+         <button><i class="bx bxs-volume-low"></i></button>
+         <button><i class="bx bx-edit-alt"></i></button>
+        </div>
+        <button onclick="sidebar()" id="sidebar"><i class="bx bx-chevron-right"></i></button>     
+        <button onclick="open_p()" id="open_p"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    </div>
+    <div class="playing-part">
+        <div class="img">
+            <img src="img1.jpg" alt="img">
+        </div>
+    </div>
+    <div class="control_part">
+        <div class="song_title">
+            <p>Song Tittle</p>
+            <p>Artist name</p>
+        </div>
+        <div class="control_buttons">
+          <div class="range_slider">
+              <input type="range" min="0" max="100" id="slider" value="0">
+              <p>3:00</p>
+          </div>
+        </div>
+        <div class="main_btns">
+            <button id="previous"><i class="fa fa-fast-backward" aria-hidden="true"></i></button>
+            <button id="play_btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <button id="next"><i class="fa fa-fast-forward" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="playlist">
+          <div class="p_songs active_song">
+              <p id="p_tittle">song name</p>
+              <p id="p_artist">artist name</p>
+              <button id="active-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+          </div>
+
+          <div class="p_songs active_song">
+            <p id="p_tittle">song name</p>
+            <p id="p_artist">artist name</p>
+            <button id="active-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+        </div>
+
+        <div class="p_songs active_song">
+            <p id="p_tittle">song name</p>
+            <p id="p_artist">artist name</p>
+            <button id="active-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+        </div>
+
+        <div class="p_songs active_song">
+            <p id="p_tittle"><div class="p_songs">
+                <p id="p_tittle">song name</p>
+                <p id="p_artist">artist name</p>
+                <button id="active-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+             </div>
+
+        <div class="p_songs active_song">
+            <p id="p_tittle">song name</p>
+            <p id="p_artist">artist name</p>
+            <button id="active-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+        </div>
+
+        <div class="p_songs active_song">
+            <p id="p_tittle">song name</p>
+            <p id="p_artist">artist name</p>
+            <button id="active-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+        </div>
+        </div>
+    </div>
+   </div>
+ </center>
+</body>
+<script src="main.js"></script>
+</html>
